@@ -23,11 +23,27 @@ const Home = () => {
       </Row> 
       <Row>
          <Col>
+              <Button color="link"><Link to="/clientTypes">Management - 0)  User Gender </Link></Button> <br />
               <Button color="link"><Link to="/clientTypes">Management - 1)  Client Types</Link></Button> <br />
               <Button color="link"><Link to="/clientTypes">Management - 2)  Member Types</Link></Button> <br />
-              <Button color="link"><Link to="/clientTypes">Management - 3)  Puzzle Level Privacy</Link></Button> <br />
-              <Button color="link"><Link to="/clientTypes">Management - 4)  Puzzle Category </Link></Button> <br />
-              <Button color="link"><Link to="/clientTypes">Management - 5)  Wallet Item Types </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 3)  Puzzle Level Difficulty</Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 4)  Puzzle Level Privacy</Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 5)  Puzzle Level Status</Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 6)  Puzzle Category </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 7)  Puzzle Object Action Owner Type </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 8)  Object Category </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 9)  Object Action Types </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 10)  Wallet Item Category </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 11)  Game Status </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 12)  AL City Data Types </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 13)  Binary Content Type </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 14)  Attribute Owner Type </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 15)  Puzzle Level Rule Event Type </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 16)  Puzzle Level Rule Post Action Type </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 17)  System Event </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 18)  User Event </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 19)  Learning Topic </Link></Button> <br />
+              
         </Col>
         <Col>
               <Button color="link"><Link to="/clientTypes">Management - 1)  Journey </Link></Button> <br />
@@ -44,11 +60,12 @@ const Home = () => {
               <Button color="link"><Link to="/clientTypes">Management - 5)  ..... </Link></Button> <br />
         </Col>
         <Col>
-              <Button color="link"><Link to="/clientTypes">Management - 1)  Wallet Item</Link></Button> <br />
-              <Button color="link"><Link to="/clientTypes">Management - 2)  Currency Change Rate</Link></Button> <br />
-              <Button color="link"><Link to="/clientTypes">Management - 3)  Gem Price</Link></Button> <br />
-              <Button color="link"><Link to="/clientTypes">Management - 4)  Wallet Transaction </Link></Button> <br />
-              <Button color="link"><Link to="/clientTypes">Management - 5) Application Members </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 1)  Wallet Item Types </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 2)  Wallet Item</Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 3)  Currency Change Rate</Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 4)  Gem Price</Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 5)  Wallet Transaction </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 6) Application Members </Link></Button> <br />
         </Col>
 
         </Row>
