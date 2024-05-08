@@ -12,16 +12,24 @@ const Home = () => {
       <AppNavbar/>
       <Container fluid>
       <Row>
-          <Col className="mystyle" >Administration Panel For Al City Project...</Col>
+          <Col className="head_style" >Administration Panel For Al City Project...</Col>
           
       </Row> 
       <Row>
-          <Col>one</Col>
-          <Col>two</Col>
-          <Col>three</Col>
+          <Col className='group_style'>Base Data Types</Col>
+          <Col className='group_style'>Journey Information</Col>
+          <Col className='group_style'>Puzzle Level </Col>
+          <Col className='group_style'>MemberShip and Wallet</Col>
       </Row> 
       <Row>
          <Col>
+              <Button color="link"><Link to="/clientTypes">Management - 1)  Client Types</Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 2)  Member Types</Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 3)  Puzzle Level Privacy</Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 4)  Puzzle Category </Link></Button> <br />
+              <Button color="link"><Link to="/clientTypes">Management - 5)  Wallet Item Types </Link></Button> <br />
+        </Col>
+        <Col>
               <Button color="link"><Link to="/clientTypes">Management - 1)  Client Types</Link></Button> <br />
               <Button color="link"><Link to="/clientTypes">Management - 2)  Member Types</Link></Button> <br />
               <Button color="link"><Link to="/clientTypes">Management - 3)  Puzzle Level Privacy</Link></Button> <br />
