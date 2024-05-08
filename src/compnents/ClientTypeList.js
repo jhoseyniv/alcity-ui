@@ -54,7 +54,7 @@ const ClientTypeList = () => {
         <div className="float-end">
           <Button color="success" tag={Link} to="/clientTypes/new">Add ClientType</Button>
         </div>
-        <h3>My JUG Tour</h3>
+        <h3>Client Type Management </h3>
         <Table className="mt-4">
           <thead>
           <tr>

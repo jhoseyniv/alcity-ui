@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.nav + .container, nav + .container-fluid {
+  margin-top: 20px;
+} 
+.mystyle {  
+  background-color: #cdc0b0;  
+  color: Red;  
+  padding: 10px;  
+  font-family: Arial;  
+  font-weight: bold;
+  text-align: center;  
+}  

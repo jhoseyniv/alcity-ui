@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Home from './Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ClientTypeList from './ClientTypeList';
+import ClientTypeList from './compnents/ClientTypeList';
 
 const App = () => {
   return (
