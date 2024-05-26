@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Button, ButtonGroup, Container, Table } from 'reactstrap';
 import AppNavbar from '../AppNavbar';
 import { Link } from 'react-router-dom';
+import axios from "axios";
+import PuzzleGroup from '../../compnenet2/PuzzleGroup';
 
 const PuzzleCategoryList = () => {
 
-  const [puzzleCategories, setPuzzleCategories] = useState([]);
+  const [puzzleCategories, setPuzzleCategories] = useState([0]);
+  const [puzzleGroups , setPuzzleGroups] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -19,21 +22,14 @@ const PuzzleCategoryList = () => {
       })
   }, []);
 
-  const remove = async (id) => {
-    await fetch(`/base/pc/${id}`, {
-      method: 'DELETE',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      }
-    }).then(() => {
-      let updatedPuzzleCategories = [...puzzleCategories].filter(i => i.id !== id);
-      setPuzzleCategories(updatedPuzzleCategories);
-    });
-  }
-
-  if (loading) {
-    return <p>Loading...</p>;
+  const remove = (id) => {
+    alert(id);
+      return (
+        <div>
+         <PuzzleGroup title = {"myTitle"} url = {"myURL"} />
+         </div>
+      );
+  
   }
 
   const puzzleCategoryList = puzzleCategories.map(puzzleCategory => {
@@ -42,8 +38,11 @@ const PuzzleCategoryList = () => {
       <td>
         <ButtonGroup>
         <Button size="sm" color="primary" tag={Link} to={"/puzzleCategories/" + puzzleCategory.id}>Edit </Button>&nbsp;&nbsp;
-        <Button size="sm" color="primary" tag={Link} to={"/pc/id/" + puzzleCategory.id +"/pg/all"}>puzzle groups </Button>&nbsp;&nbsp;
-          <Button size="sm" color="danger" onClick={() => remove(puzzleCategory.id)}>Delete</Button>
+        <Button size="sm" color="primary" tag={Link} to={"/pc/id/:" + puzzleCategory.id +"/pg/all"} > puzzle groups 
+        
+        </Button>&nbsp;&nbsp;
+
+         <Button size="sm" color="danger" onClick={() => remove(puzzleCategory.id) }>Delete</Button>
         </ButtonGroup>
       </td>
     </tr>

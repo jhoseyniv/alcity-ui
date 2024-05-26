@@ -3,15 +3,15 @@ import { Button, ButtonGroup, Container, Table } from 'reactstrap';
 import AppNavbar from '../AppNavbar';
 import { Link } from 'react-router-dom';
 
-const PuzzleGroupList = () => {
+const PuzzleGroupList = ({apiAddress1},{apiAddress2},{apiAddress3}) => {
 
   const [puzzleGroups, setPuzzleGroups] = useState([]);
   const [loading, setLoading] = useState(false);
-
+  const apiAddress = apiAddress1 + apiAddress2 + apiAddress3;
   useEffect(() => {
     setLoading(true);
 
-    fetch('/pg/all')
+    fetch(apiAddress)
       .then(response => response.json())
       .then(data => {
         setPuzzleGroups(data);

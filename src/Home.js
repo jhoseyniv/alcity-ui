@@ -23,7 +23,9 @@ const Home = () => {
       </Row> 
       <Row>
          <Col>
-              <Button color="link"><Link to="/userGenders">Management- 0) User Gender </Link></Button> <br />
+               <Button color="link"><Link to="/puzzleGroup1">Management- 0) Puzzle Group 1 </Link></Button> <br />
+               <Button color="link"><Link to="/puzzleGroup2">Management- 0) Puzzle Group 2 </Link></Button> <br />
+               <Button color="link"><Link to="/userGenders">Management- 0) User Gender </Link></Button> <br />
               <Button color="link"><Link to="/clientTypes">Management- 1) Client Types</Link></Button> <br />
               <Button color="link"><Link to="/memberTypes">Management- 2) Member Types</Link></Button> <br />
               <Button color="link"><Link to="/plDifficulties">Management- 3) Puzzle Level Difficulty</Link></Button> <br />
