@@ -3,6 +3,7 @@ import DataTable from 'react-data-table-component';
 import axios from 'axios';
 import { Alert } from 'reactstrap';
 
+import { useParams } from 'react-router';
 
 const mycolumns = [
 	{
@@ -46,10 +47,13 @@ const mycolumns = [
 const PuzzleGroup = ({title , url1,url2 }) => {
 
 	const [apiData, setApiData] = useState(null);
+	const params= useParams()
+	const id = params.id;
+	//alert(id);
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(url1+8+url2);
+        const response = await axios.get(url1+id+url2);
         setApiData(response.data);
         console.error(response.data);
       } catch (error) {

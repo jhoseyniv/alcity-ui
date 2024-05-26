@@ -7,6 +7,7 @@ const PuzzleGroupList = ({apiAddress1},{apiAddress2},{apiAddress3}) => {
 
   const [puzzleGroups, setPuzzleGroups] = useState([]);
   const [loading, setLoading] = useState(false);
+
   const apiAddress = apiAddress1 + apiAddress2 + apiAddress3;
   useEffect(() => {
     setLoading(true);

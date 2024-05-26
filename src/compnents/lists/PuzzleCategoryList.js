@@ -38,7 +38,7 @@ const PuzzleCategoryList = () => {
       <td>
         <ButtonGroup>
         <Button size="sm" color="primary" tag={Link} to={"/puzzleCategories/" + puzzleCategory.id}>Edit </Button>&nbsp;&nbsp;
-        <Button size="sm" color="primary" tag={Link} to={"/pc/id/:" + puzzleCategory.id +"/pg/all"} > puzzle groups 
+        <Button size="sm" color="primary" tag={Link} to={"/pc/id/" + puzzleCategory.id +"/pg/all"} > puzzle groups 
         
         </Button>&nbsp;&nbsp;
 
